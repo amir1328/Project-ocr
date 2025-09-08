@@ -1,0 +1,12 @@
+opencv-python>=4.9.0.80
+numpy>=1.26.0
+pillow>=10.3.0
+pytesseract>=0.3.10
+scikit-image>=0.22.0
+symspellpy>=6.7.8
+rapidfuzz>=3.6.1
+python-bidi>=0.4.2
+arabic-reshaper>=3.0.0
+streamlit>=1.36.0
+rich>=13.7.1
+click>=8.1.7
