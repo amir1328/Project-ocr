@@ -46,6 +46,12 @@ class OcrPipeline:
             dewarp=self.config.dewarp,
         )
         regions = detect_text_regions(pre, min_area=self.config.min_region_area)
+
+        # Fallback: if no regions, OCR the full image as one region
+        if not regions:
+            w, h = pre.size
+            regions = [{"bbox": (0, 0, w, h)}]
+
         ocr_results = run_ocr_on_regions(
             pre,
             regions,
