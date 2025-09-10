@@ -1,0 +1,137 @@
+[
+  {
+    "image_path": "inputs\\hello.png",
+    "regions": [
+      {
+        "bbox": [
+          0,
+          0,
+          800,
+          200
+        ],
+        "contour_area": 159001.0,
+        "type": "text_region",
+        "region_id": 0,
+        "area": 160000,
+        "aspect_ratio": 4.0,
+        "center": [
+          400,
+          100
+        ],
+        "area_ratio": 1.0,
+        "reading_order": 0
+      },
+      {
+        "bbox": [
+          0,
+          0,
+          800,
+          200
+        ],
+        "type": "table_cell",
+        "area": 160000,
+        "region_id": 1,
+        "aspect_ratio": 4.0,
+        "center": [
+          400,
+          100
+        ],
+        "area_ratio": 1.0,
+        "reading_order": 1
+      }
+    ],
+    "ocr_results": [
+      {
+        "bbox": [
+          0,
+          0,
+          800,
+          200
+        ],
+        "text": "",
+        "region_index": 0,
+        "confidence": 0.0,
+        "image_quality": {},
+        "text_quality": {},
+        "word_confidences": [],
+        "word_texts": [],
+        "quality_score": 0.0
+      },
+      {
+        "bbox": [
+          0,
+          0,
+          800,
+          200
+        ],
+        "text": "",
+        "region_index": 1,
+        "confidence": 0.0,
+        "image_quality": {},
+        "text_quality": {},
+        "word_confidences": [],
+        "word_texts": [],
+        "quality_score": 0.0
+      }
+    ],
+    "raw_text": "",
+    "text": "",
+    "layout_analysis": {
+      "total_regions": 2,
+      "region_types": {
+        "text_region": 1,
+        "table_cell": 1
+      },
+      "layout_stats": {
+        "avg_area": 160000.0,
+        "total_area": 320000,
+        "avg_aspect_ratio": 4.0,
+        "area_std": 0.0
+      },
+      "layout_features": {
+        "is_multi_column": false,
+        "estimated_columns": 1,
+        "has_tables": true,
+        "table_cell_count": 1,
+        "has_headers": false,
+        "has_sidebars": false
+      }
+    },
+    "ocr_statistics": {
+      "total_regions": 2,
+      "total_text_length": 0,
+      "total_word_count": 0,
+      "avg_text_length_per_region": 0.0,
+      "avg_words_per_region": 0.0,
+      "avg_confidence": 0.0,
+      "min_confidence": 0.0,
+      "max_confidence": 0.0,
+      "confidence_std": 0.0,
+      "avg_quality_score": 0.0,
+      "min_quality_score": 0.0,
+      "max_quality_score": 0.0,
+      "quality_score_std": 0.0,
+      "high_quality_regions": 0,
+      "medium_quality_regions": 0,
+      "low_quality_regions": 2,
+      "quality_distribution": {
+        "high": 0.0,
+        "medium": 0.0,
+        "low": 1.0
+      }
+    },
+    "processing_info": {
+      "total_regions": 2,
+      "config": {
+        "language": "eng",
+        "psm": 3,
+        "oem": 3,
+        "preprocessing": {
+          "binarize_method": "sauvola",
+          "denoise_method": "bilateral",
+          "contrast_method": "clahe"
+        }
+      }
+    }
+  }
+]
